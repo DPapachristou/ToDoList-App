@@ -1,0 +1,242 @@
+ /* Styling for the add task button */
+#addTask {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #91ffa0;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    margin: 0 0 0 10px;
+}
+
+#addTask:hover {
+    background: #bcda4f;
+}
+
+/* Styling for the delete button */
+#delete {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #af6969;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    margin: auto;
+}
+
+#delete:hover {
+    background: #c52e29;
+    color: white;
+}
+
+/* Delete Last Button */
+#deleteLast {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #f49b36; /* Red */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#deleteLast:hover {
+    background-color: #ff5e00;
+}
+
+/* Delete All Button */
+#deleteAll {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #e71b1b; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#deleteAll:hover {
+    background-color: #9c0404;
+}
+
+/* Styling for the input field */
+#inputTask {
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0px 15px;
+    margin-left: 0%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Main heading styling */
+h2 {
+    text-align: center;
+    color: rgb(35, 185, 42);
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: flip 4s infinite;
+}
+
+/* Paragraph before input */
+p {
+    margin-left: 25%;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Page background */
+body {
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L21pc2NlbXB0eXJvb20tZm9uLXJvb210eXBlMS1saWdodDMtMjIuanBn.jpg?s=6r8-lq1k-P_VmRvKI8WjxoIxQuMDhhKS4K-cvjZ739Y");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #a17d7d9a;
+    min-height: 100vh;
+}
+
+/* Container for entire app */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Styling for task list */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    background-color: #d3f9d8;
+    color: #6a6a6a;
+}
+
+/* Task title (editable span) */
+.task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Buttons within list items */
+.task-buttons button {
+    margin-left: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Edit Button in task list */
+.edit-btn {
+    background-color: #91baff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #3f8cff;
+}
+
+/* Complete Button in task list */
+.complete-btn {
+    background-color: #91ffa0;
+}
+
+.complete-btn:hover {
+    background-color: #5fd475;
+}
+
+/* Delete Button in task list */
+.delete-btn {
+    background-color: #ffb1b1;
+    color: black;
+}
+
+.delete-btn:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Filter buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.filter-container button {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-container button:hover,
+.filter-container button.active {
+    background-color: #bcda4f;
+    border-color: #91ffa0;
+}
+
+/* Animation keyframes */
+@keyframes flip {
+    0%, 80% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
