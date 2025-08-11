@@ -183,12 +183,12 @@ body {
 }
 
 /* Delete Button in task list */
-.delete-btn {
+.deleteBtn {
     background-color: #ffb1b1;
     color: black;
 }
 
-.delete-btn:hover {
+.deleteBtn:hover {
     background-color: #ff6b6b;
     color: white;
 }

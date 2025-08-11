@@ -14,7 +14,7 @@ function renderList() {
   const filteredTasks = toDoList.filter((task) => {
     if (currentFilter === "active") return !task.checked;
     if (currentFilter === "completed") return task.checked;
-    return true; // "all" shows everything
+    return true; 
   });
 
   // Render each filtered task
