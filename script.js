@@ -49,6 +49,7 @@ function renderToDo(task) {
   // Create Edit button
   const editBtn = document.createElement("button");
   editBtn.textContent = "Edit";
+  editBtn.classList.add("edit-btn");
   editBtn.addEventListener("click", () => {
     const newText = prompt("Edit task:", task.text);
     if (newText !== null && newText.trim() !== "") {
@@ -60,10 +61,11 @@ function renderToDo(task) {
   // Create Delete button
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
+  deleteBtn.classList.add("delete-btn");
   deleteBtn.addEventListener("click", () => {
     toDoList = toDoList.filter((t) => t.id !== task.id);
     renderList();
-  });
+  }); 
 
   // Append all elements to the list item
   listItem.appendChild(checkbox);

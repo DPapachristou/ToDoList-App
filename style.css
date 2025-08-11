@@ -165,12 +165,20 @@ body {
 
 /* Edit Button in task list */
 .edit-btn {
-    background-color: #91baff;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #028117; /* Orange */
     color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-left: 300px;
 }
 
 .edit-btn:hover {
-    background-color: #3f8cff;
+    background-color: #085a00;
 }
 
 /* Complete Button in task list */
@@ -183,14 +191,20 @@ body {
 }
 
 /* Delete Button in task list */
-.deleteBtn {
-    background-color: #ffb1b1;
-    color: black;
+.delete-btn {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #e71b1b; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
-.deleteBtn:hover {
-    background-color: #ff6b6b;
-    color: white;
+.delete-btn:hover {
+    background-color: #9c0404;
 }
 
 /* Filter buttons */
